@@ -33,6 +33,12 @@ class VideoPlayer:
             print ("Playing video: Funny Dogs")
         elif val == amazing_cats_video_id:
             print ("Playing video: Amazing Cats")
+        elif val == another_cat_video_id:
+            print ("Playing video: Another Cat")
+        elif val == life_at_google_video_id:
+            print ("Playing video: Life at Google")
+        elif val == nothing_video_id:
+            print ("Playing video: Video about Nothing")
         else:
             print ("Cannot play video: Video does not exist")
 
