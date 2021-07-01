@@ -15,8 +15,12 @@ class VideoPlayer:
 
     def show_all_videos(self):
         """Returns all videos."""
+        f = open('videos.txt','r')
+        file_contents = f.read()
+        
 
-        print("show_all_videos needs implementation")
+        print ("Here's a list of all available videos: \n"+ str(file_contents))
+        f.close()
 
     def play_video(self, video_id):
         """Plays the respective video.
@@ -24,7 +28,13 @@ class VideoPlayer:
         Args:
             video_id: The video_id to be played.
         """
-        print("play_video needs implementation")
+        val = input("Enter video id: ")
+        if val == funny_dogs_video_id:
+            print ("Playing video: Funny Dogs")
+        elif val == amazing_cats_video_id:
+            print ("Playing video: Amazing Cats")
+        else:
+            print ("Cannot play video: Video does not exist")
 
     def stop_video(self):
         """Stops the current video."""
